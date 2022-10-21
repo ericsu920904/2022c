@@ -101,3 +101,16 @@ int main()
         printf("不管甚麼東西,幾乎都成立\n");
 }
 ```
+## step01-6
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n=1234567812345678;
+    printf("%d\n",n);
+
+
+    long long int a=1234567812345678;
+    printf("%lld\n",a);
+}
+```
