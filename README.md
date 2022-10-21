@@ -114,3 +114,50 @@ int main()
     printf("%lld\n",a);
 }
 ```
+## step01-7
+```cpp
+#include <stdio.h>
+int main()
+{
+    long long int a,b;
+    scanf("%lld%lld",&a,&b);
+
+    long long int ans;
+
+    for(long long int i=1;i<=a;i++){
+        if(a%i==0 && b%i==0) ans=i;
+    }
+    printf("答案是:%lld\n",ans);
+}
+```
+## step01-8
+```cpp
+#include <stdio.h>
+int main()
+{
+    long long int a,b,c;
+    scanf("%lld%lld",&a,&b);
+
+    while(1){
+        c=a%b;
+        printf("%lld %lld %lld",a,b,c);
+        if(c==0) break;
+        a=b;
+        b=c;
+    }
+    printf("答案是:%lld\n",b);
+}
+```
+## step01-9
+#include <stdio.h>
+int main()
+{
+    int n=1234;
+
+    while(n>0){
+        printf("個位數是%d\n",n%10);
+        n=n/10;
+        }
+}
+
+```
