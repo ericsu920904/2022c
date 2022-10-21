@@ -150,6 +150,7 @@ int main()
 }
 ```
 ## step01-9
+```cpp
 #include <stdio.h>
 int main()
 {
