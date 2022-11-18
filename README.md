@@ -249,7 +249,7 @@ int main()
 	}
 }
 ```
-#Week10
+# Week10
 ```
 ##step01
 ```cpp
@@ -276,5 +276,47 @@ int main()
     for(int i=3;i>=0;i--){
         printf("a[%d]:%d\n",i,a[i]);
     }
+}
+```
+# Week11
+```
+##step01
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a=90,b=80;
+    printf("a:%d b:%d\n",a,b);
+
+    int temp=a;
+    a=b;
+    b=temp;
+
+    printf("a:%d b:%d",a,b);
+
+}
+```
+##step02
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a=90,b=80,c=70;
+    if(a>b){
+    int temp=a;
+    a=b;
+    b=temp;
+    }
+    if(b>c){
+    int temp=b;
+    b=c;
+    c=temp;
+    }
+    if(a>b){
+    int temp=a;
+    a=b;
+    b=temp;
+    }
+    printf("a:%d b:%d c:%d",a,b,c);
 }
 ```
