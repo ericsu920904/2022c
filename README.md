@@ -251,7 +251,7 @@ int main()
 ```
 # Week10
 ```
-##step01
+## step01
 ```cpp
 #include <stdio.h>
 int main()
@@ -264,7 +264,7 @@ int main()
     printf("a[3]:%d\n",a[3]);
 }
 ```
-##step02
+## step02
 ```cpp
 #include <stdio.h>
 int main()
@@ -280,7 +280,7 @@ int main()
 ```
 # Week11
 ```
-##step01
+## step01
 ```cpp
 #include <stdio.h>
 int main()
@@ -296,7 +296,7 @@ int main()
 
 }
 ```
-##step02
+## step02
 ```cpp
 #include <stdio.h>
 int main()
