@@ -345,3 +345,123 @@ int main()
     ("\n");
 }
 ```
+#Week12
+```
+##step01
+```cpp
+
+#include <stdio.h>
+int a[5]={5,4,3,2,1};
+int main()
+{
+    for(int i=0;i<5;i++){
+        for(int j=i+1;j<5;j++){
+            if(a[i]>a[j]){
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    for(int i=0;i<5;i++){
+        printf("%d ",a[i]);
+    }
+}
+```
+##step02
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a;
+    int b=10;
+    int c[3];
+    int d[3]={10,20,30};
+    int g[2][3];
+    int h[2][3]{10,20,30},{40,50,60};
+}
+```
+#step03
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a[2][3]={{10,20,30} ,  {40,50,60}};
+
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+##step04
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a[10][10],b[10][10],c[10][10];
+    int n;
+    scanf("%d",&n);
+
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&b[i][j]);
+
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            c[i][j]=a[i][j]+b[i][j];
+        }
+    }
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+                printf("%3d",c[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+##step05
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a[10][10],b[10][10],c[10][10];
+    int n;
+    scanf("%d",&n);
+
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&b[i][j]);
+
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            c[i][j]=0;
+            for(int k=0;k<n;k++){
+            c[i][j]+=a[i][k]*b[i][k];
+            }
+        }
+    }
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+                printf("%3d",c[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
