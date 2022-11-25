@@ -345,9 +345,9 @@ int main()
     ("\n");
 }
 ```
-#Week12
+# Week12
 ```
-##step01
+## step01
 ```cpp
 
 #include <stdio.h>
@@ -368,7 +368,7 @@ int main()
     }
 }
 ```
-##step02
+## step02
 ```cpp
 #include <stdio.h>
 int main()
@@ -381,7 +381,7 @@ int main()
     int h[2][3]{10,20,30},{40,50,60};
 }
 ```
-#step03
+## step03
 ```cpp
 #include <stdio.h>
 int main()
@@ -396,7 +396,7 @@ int main()
     }
 }
 ```
-##step04
+## step04
 ```cpp
 #include <stdio.h>
 int main()
@@ -429,7 +429,7 @@ int main()
     }
 }
 ```
-##step05
+## step05
 ```cpp
 #include <stdio.h>
 int main()
