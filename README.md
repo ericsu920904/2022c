@@ -536,3 +536,40 @@ int main()
     }
 }
 ```
+# Week16
+```
+## step 01
+```cpp
+#include <stdio.h>
+int main()
+{
+    char line[300];
+    char*p=line;
+
+    int n=10;
+    int *p2=&n;
+
+    float f=3.1415926;
+    float*p3=&f;
+
+    char c='A';
+    char*p4=&c;
+}
+```
+## step 02
+```cpp
+#include <stdio.h>
+int main()
+{
+    char line[20]="Hello";
+    int N= strlen(line);
+
+    printf("Hello字串的長度:%d\n",N);
+
+    char line2[20];
+    strcpy(line2,line);
+    printf("line2得到:%s\n",line2);
+
+    printf("比較字串strcmp(line,line2得到%d\n",strcmp(line,line2));
+}
+```
