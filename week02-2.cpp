@@ -1,6 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    printf("Hello World\n");
-    printf("Hello%dWorld\n",33);
+	int a,b;
+	while(scanf("%d%d",&a,&b)==2){
+	int ans= b-a;
+	if(a>b) ans=a-b;
+	if(a<b) ans=b-a;
+	printf("%d\n",ans);
+	}
 }

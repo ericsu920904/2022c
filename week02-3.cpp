@@ -1,8 +1,12 @@
 #include <stdio.h>
 int main()
 {
-    printf("½Ð¿é¤J¼Æ¦r\n");
-    int a,b;
-    scanf("%d%d",&a,&b);
-    printf("%d",a+b);
+	long long int a,b;
+	while(scanf("%lld%lld",&a,&b)==2){
+	long long int ans=0;
+	if(a>b) ans=a-b;
+	if(b>a) ans=b-a;
+	printf("%lld\n",ans);
+	}
 }
+
