@@ -1,13 +1,17 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    printf("請輸入兩個數字:");
+	char line[30];
 
-    int a,b;
-    scanf("%d%d",&a,&b);
-    printf("%d加%d得到%d\n",a,b,a+b);
-    printf("%d減%d得到%d\n",a,b,a-b);
-    printf("%d乘%d得到%d\n",a,b,a*b);
-    printf("%d除%d得到%d\n",a,b,a/b);
-    printf("%d除%d的餘數%d\n",a,b,a%b);
+	scanf("%s",line);
+
+	int N = strlen(line);
+	int bad = 0;
+	for(int i=0;i<N;i++){
+		if(line[i] != line[N-1-i])bad=1;
+	}
+	if(bad==1)printf("他不是迴文\n");
+	else printf("他是迴文\n");
+
 }
