@@ -1,10 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    for(int i=0; i<7; i++) {
-        printf("印出%d\n",i);
-    }
-    for(int i=1; i<=7; i++) {
-        printf("人類的版本，印出%d\n",i);
-    }
+    int a = 10, b = 20;
+    int *p1, *p2;
+    printf("a:%d b:%d\n",a,b);
+
+    p1 = &a;
+    *p1 = 99;
+    printf("a:%d b:%d\n",a,b);
+
+    p2 = p1;
+    *p2 = 77;
+    printf("a:%d b:%d\n",a,b);
 }

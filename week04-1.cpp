@@ -1,11 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    printf("請輸入西元年:");
-    int n;
-    scanf("%d",&n);
-    if(n%400==0)printf("閏年");
-    else if(n%100==0)printf("普通年/平年");
-    else if(n%4==0)printf("閏年");
-    else printf("普通年/平年");
+    int a=10;
+    printf("A的值是%d\n",a);
+    printf("A的家在%d\n",&a);
+
+     int b=20;
+    printf("B的值是%d\n",b);
+    printf("B的家在%d\n",&b);
+
+     int c=30;
+    printf("C的值是%d\n",c);
+    printf("C的家在%d\n",&c);
 }
